@@ -1,0 +1,88 @@
+ /* 2.CSS Layout Techniques  */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .grid-item {
+    flex: 1 0 50%; /* 1 column for mobile */
+    border: 2px solid red;
+
+  
+    /* 2 columns for tablet */
+    @media (min-width: 600px) {
+      flex-basis: 50%;
+    }
+  
+    /* 4 columns for desktop */
+    @media (min-width: 1200px) {
+      flex-basis: 25%;
+    }
+  
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  /* Optional: Set a maximum width for the grid items */
+  @media (min-width: 1200px) {
+    .grid-item {
+      max-width: 25%;
+    }
+
+
+    /*  3. CSS Animation  */
+  }.hover-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hover-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    transition: height 0.3s ease;
+  }
+  
+  .hover-button:hover:before {
+    height: 100%;
+  }
+  
+  .hover-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+
+  /* 6. AJAX and API Integration */
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+  }
+  .error {
+    text-align: center;
+    font-size: 18px;
+    color: red;
+  }
+  .weather {
+    text-align: center;
+    font-size: 24px;
+  }
+  .error {
+    color: red;
+  }
+  
+  

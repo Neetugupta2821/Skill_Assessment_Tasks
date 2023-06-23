@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Layout</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+ 
+
+<!-- 2.CSS Layout Techniques -->
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+  </div>
+  <!-- 3. CSS Animation -->
+  <div style="margin: 10px;">
+  <button class="hover-button">Hover Me</button>
+  </div>
+  <!-- 4. JavaScript DOM Manipulation -->
+<div>
+  <input type="text" id="newItemInput" placeholder="Enter an item">
+<button onclick="addItem()">Add Item</button>
+<ul id="itemList"></ul>
+</div>
+
+<!-- 6. AJAX and API Integration-->
+<div> 
+<h1>Weather App</h1>
+  <form id="cityForm">
+    <label for="cityInput">Enter City Name:</label>
+    <input type="text" id="cityInput">
+    <button type="submit">Get Weather</button>
+  </form>
+  <div id="loadingIndicator" class="loading">Loading...</div>
+  <div id="weatherData" class="weather"></div>
+</div>
+<!--7. Form Validation-->
+<div>
+    <h1>Contact Form</h1>
+  <form id="contactForm">
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput">
+    <span id="nameError" class="error"></span>
+    <br>
+
+    <label for="emailInput">Email:</label>
+    <input type="email" id="emailInput">
+    <span id="emailError" class="error"></span>
+    <br>
+
+    <label for="messageInput">Message:</label>
+    <textarea id="messageInput"></textarea>
+    <span id="messageError" class="error"></span>
+    <br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</div>
+  
+  </div>
+  
+</body>
+</html>
